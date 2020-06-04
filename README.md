@@ -82,7 +82,7 @@ npm install --save-dev babel-preset-flow remove-flow-types-loader
 
 **微信反馈**
 
-可能通过时间比较忙,添加时候请注明 `来自Github`
+可能通过时间比较慢,添加时候请注明 `来自Github`
 
 ## 示例
 
