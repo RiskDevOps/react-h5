@@ -1,6 +1,6 @@
 ## TODO-LIST
 
-暂定的待办事项, 按照Scrum模型中的Sprint进行划分迭代, 如果有非常紧急的需求可以在提交Issues时Title 以 urgent: 开头, 如下
+暂定的待办事项, 按照Scrum模型中的Sprint进行划分迭代, 如果有非常紧急的需求可以在提交Issues时Title 以` urgent:` 开头, 如下
 
 > urgent: 在打包的时候Webpack提示xx错误, <br> Issue内容....
 
