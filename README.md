@@ -1,8 +1,22 @@
 ## 简述
 基于最基础的create-react-app dva antd-mobile webpack做修改而来
-现在移动端适配问题是 `px` 和 `百分比` 等单位全部转换为 `rem`, 并且根据设备大小计算出 `html节点的font-size`, 就可以达到这样的效果
+现在移动端适配问题是 `px` 单位全部转换为 `rem`, 并且根据设备大小计算出 `html节点的font-size`, 就可以达到适配多端的效果
 
-现在语言采用JavaScript, 如果你需要使用 静态类型分析 可以添加 Flow 来进行支持, [Flow官网](https://zhenyong.github.io/flowtype/)
+> 注意: 暂时还不支持 `百分比` 和 `vw vh` 统一转换为 `rem`, 提及这一点是因为 `百分比或者vw vh与px的缩放规则并不相同`, 建议使用 `px` 或者是 `rem` 作为开发时的单位... 
+
+## 静态类型支持
+
+**React PropTypes**
+
+中小型项目可以使用 `PropTypes` 作为类型静态类型支持工具, 但是也会有一些不足
+
+[PropTypes 文档](https://reactjs.org/docs/typechecking-with-proptypes.html)
+
+**Flow 静态类型检查器**
+
+现在语言采用JavaScript, 如果你需要使用 静态类型分析 可以添加 Flow 来进行支持, 
+
+[Flow官网](https://zhenyong.github.io/flowtype/)
 
 但是使用了 Flow 方案后, 请在打包前置使用 `remove-flow-types-loader` 将Flow的支持移除, 因为Flow的语法在JS中并不支持, 如果不移除将会引起Build后无法使用, 具体配置与 `webpack loader` 配置完全相同!
 
@@ -42,6 +56,10 @@ npm install --save-dev babel-preset-flow remove-flow-types-loader
     )
 ```
 你可能会遇到 `你可能需要使用其他loader进行解析的报错` 那是因为 `Pre` 被 `Eslint-loader` 占用, `/\.jsx?$/` 这个规则被 `babel-loader` 占用, 需要先将Eslint-loader禁用, 然后在规则的use处添加上对 react 的解析loader => `babel-loader`
+
+**TypeScript 支持**
+
+暂时还未支持TypeScript, 现在这个库只是 JavaScript 版本 将在不久会推出 TypeScript 版本
 
 ## 调试
 
