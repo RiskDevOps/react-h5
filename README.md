@@ -2,7 +2,7 @@
 基于最基础的create-react-app dva antd-mobile webpack做修改而来
 现在移动端适配问题是 `px` 单位全部转换为 `rem`, 并且根据设备大小计算出 `html节点的font-size`, 就可以达到适配多端的效果
 
-> 注意: 暂时还不支持 `百分比` 和 `vw vh` 统一转换为 `rem`, 提及这一点是因为 `百分比或者vw vh与px的缩放规则并不相同`, 建议使用 `px` 或者是 `rem` 作为开发时的单位... 
+> 注意: 暂时还不支持 `百分比` 和 `vw vh` 统一转换为 `rem`, 提及这一点是因为 `百分比或者vw vh与px的缩放规则并不相同`, 建议使用 `px` 或者是 `rem` 作为开发时的单位...
 
 ## 静态类型支持
 
@@ -14,7 +14,7 @@
 
 **Flow 静态类型检查器**
 
-现在语言采用JavaScript, 如果你需要使用 静态类型分析 可以添加 Flow 来进行支持, 
+现在语言采用JavaScript, 如果你需要使用 静态类型分析 可以添加 Flow 来进行支持,
 
 [Flow官网](https://zhenyong.github.io/flowtype/)
 
@@ -84,6 +84,13 @@ npm install --save-dev babel-preset-flow remove-flow-types-loader
 
 可能通过时间比较慢,添加时候请注明 `来自Github`
 
+
+**一些文档**
+
+[可能存在的一些问题, 正在编写中](./docs/md/QUESTION.md)
+
+[正在修复的BUG](./docs/md/FIXBUG.md)
+
 ## 示例
 
 基于第三方在线图片托管平台
@@ -93,3 +100,7 @@ npm install --save-dev babel-preset-flow remove-flow-types-loader
 在仓库文件中也有提供示例截图, 在 `docs/image` 文件夹下可以找到, 但是可能由于您本地HOST问题, DNS无法解析到 `github.com` .
 
 你可以在HOST文件中尝试添加 DNS 解析地址, 或者是将仓库 `Clone` 到本地进行查看
+
+## TODO
+
+[TODO-LIST](./docs/md/TODO.md)
