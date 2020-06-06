@@ -11,7 +11,7 @@
 
 ## 静态类型支持
 
-> 计画除了原生的`React PropTypes`类型支持外, 还将提供 [Flow](https://zhenyong.github.io/flowtype/) 和 `TypeScript` 支持, 现在已经支持 `Flow`静态类型分析
+> 计划除了原生的`React PropTypes`类型支持外, 还将提供 [Flow](https://zhenyong.github.io/flowtype/) 和 `TypeScript` 支持, 现在已经支持 `Flow`静态类型分析
 
 **Flow 静态类型检查器**
 
